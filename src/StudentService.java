@@ -91,13 +91,14 @@ public class StudentService {
 
     static void sortByMark(Student[] arr)
     {
+        
+        Student k=new Student();
         for(int i=0;i<arr.length;++i)
         {
             for(int j=i+1;j<arr.length;++j)
             {
                 if(arr[i].getMark()>arr[j].getMark())
                 {
-                    Student k=new Student();
                     k=arr[i];
                     arr[i]=arr[j];
                     arr[j]=k;
