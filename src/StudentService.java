@@ -127,14 +127,14 @@ public class StudentService {
                 j++;
             }
         }
-
+        
+                    Student k=new Student();
         for(int i=0;i<females.length;++i)
         {
             for(int j=i+1;j<females.length;++j)
             {
                 if(arr[i].getAge()>females[j].getAge())
                 {
-                    Student k=new Student();
                     k=females[i];
                     females[i]=females[j];
                     females[j]=k;
